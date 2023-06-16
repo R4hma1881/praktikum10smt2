@@ -26,3 +26,10 @@ Route ::get('/merk', [MerkController::class, 'index']);
 Route::get('/merk/edit/{id}',[MerkController::class, 'edit']);
 Route::post('/merk/update/{id}', [MerkController::class,'update']);
 Route::get('/merk/delete/{id}', [MerkController::class,'delete']);
+
+Route::get('/tipemobil', [TipeMobilConrtoller::class,'index']);
+Route::get('/tipemobil/create', [TipeMobilConrtoller::class,'create']);
+Route::post('/tipemobil/simpan-data', [TipeMobilConrtoller::class,'store']);
+Route::get('/tipemobil/edit/{id}', [TipeMobilConrtoller::class,'edit']);
+Route::post('/tipemobil/update/{id}', [TipeMobilConrtoller::class,'update']);
+Route::get('/tipemobil/delete/{id}', [TipeMobilConrtoller::class,'delete']);
